@@ -75,6 +75,7 @@ func main() {
 		*dstHeight,
 		astiav.PixelFormatRgba,
 		astiav.NewSoftwareScaleContextFlags(astiav.SoftwareScaleContextFlagBilinear),
+		nil, nil, nil,
 	)
 	if err != nil {
 		log.Println(fmt.Errorf("main: creating software scale context failed: %w", err))

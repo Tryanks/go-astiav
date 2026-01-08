@@ -54,7 +54,7 @@ func TestClassers(t *testing.T) {
 	ic2, err := AllocIOContext(1, true, nil, nil, nil)
 	require.NoError(t, err)
 	src := AllocSoftwareResampleContext()
-	ssc, err := CreateSoftwareScaleContext(1, 1, PixelFormatRgba, 2, 2, PixelFormatRgba, NewSoftwareScaleContextFlags())
+	ssc, err := CreateSoftwareScaleContext(1, 1, PixelFormatRgba, 2, 2, PixelFormatRgba, NewSoftwareScaleContextFlags(), nil, nil, nil)
 	require.NoError(t, err)
 
 	require.Equal(t, cl+13, len(classers.p))
